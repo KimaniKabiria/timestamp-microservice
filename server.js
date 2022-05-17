@@ -42,7 +42,7 @@ const timestamp = dateStr => {
 }
 
 // Timestamp API endpoint
-app.get("/api/timestamp/:date_string?", (req, res) => {
+app.get("/api/:date_string?", (req, res) => {
   res.json(timestamp(req.params.date_string))
 })
 
